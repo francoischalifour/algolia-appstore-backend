@@ -1,0 +1,40 @@
+{
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "image": {
+      "type": "string",
+      "format": "uri"
+    },
+    "link": {
+      "type": "string",
+      "format": "uri"
+    },
+    "price": {
+      "type": "string",
+      "pattern": "^[0-9()\\.\\s]+ USD$"
+    },
+    "rating": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 5
+    },
+    "ratingCount": {
+      "type": "integer",
+      "minimum": 0
+    }
+  },
+  "required": [
+    "name",
+    "category",
+    "image",
+    "link",
+    "price",
+    "rating",
+    "ratingCount"
+  ]
+}

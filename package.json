@@ -1,0 +1,40 @@
+{
+  "name": "algolia-appstore-backend",
+  "description": "AppStore backend application to interact with Algolia indices.",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "repository": "francoischalifour/algolia-appstore-backend",
+  "author": {
+    "name": "Francois Chalifour",
+    "email": "francois.chalifour@gmail.com",
+    "url": "https://francoischalifour.com"
+  },
+  "scripts": {
+    "start": "NODE_ENV=production node server",
+    "dev": "NODE_ENV=dev ./node_modules/.bin/nodemon server",
+    "lint": "./node_modules/.bin/standard",
+    "lint:fix": "./node_modules/.bin/standard --fix",
+    "test": "NODE_ENV=test ava --verbose --serial **/*.test*.js"
+  },
+  "engines": {
+    "node": ">= 7.6"
+  },
+  "dependencies": {
+    "ajv": "^5.2.2",
+    "algoliasearch": "^3.24.3",
+    "awilix": "^2.7.0",
+    "awilix-koa": "^0.1.1",
+    "dotenv": "^4.0.0",
+    "koa": "^2.3.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-router": "^7.2.1"
+  },
+  "devDependencies": {
+    "ava": "^0.21.0",
+    "nodemon": "^1.11.0",
+    "standard": "^10.0.3",
+    "supertest-koa-agent": "^0.3.0",
+    "winston": "^2.3.1"
+  }
+}
